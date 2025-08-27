@@ -42,6 +42,48 @@ print("✅ Classes:", class_to_idx)
 
 ---
 
+***
+If you want to run, you can run by:
+---
+import subprocess
+
+# Command to run YOLOv5 training
+command = [
+    "python", "yolov5/train.py",
+    "--img", "640",
+    "--batch", "16",
+    "--epochs", "3",
+    "--data", "yolov5/data/customD.yaml",
+    "--weights", "yolov5s.pt",
+    "--cache",
+    "--workers", "0"
+]
+
+# Execute the command
+subprocess.run(command)
+---
+
+or, debug by:
+
+---
+import subprocess
+
+command = [
+    "python", "yolov5/detect.py",
+    "--weights", "yolov5/runs/train/exp4/weights/best.pt",
+    "--img", "640",
+    "--conf", "0.25",
+    "--source", "a.jpg"  # folder or image path
+]
+
+# Run the command
+subprocess.run(command)
+# Get latest output image path
+
+
+---
+***
+
 5. Collect & Split Dataset
 
 Collect all image paths and their class IDs.
