@@ -1,7 +1,5 @@
-Dataset Preparation with DINO (Docs Style)
 
-This document explains step by step how to prepare a YOLO-ready dataset using the DINO Vision Transformer to extract bounding boxes automatically.
-Each section contains explanation + the corresponding code (between ---).
+This document contains TOLO + DINO integration docs
 
 # ------------------- 1. Imports -------------------
 import os, glob, shutil, random, yaml, torch
