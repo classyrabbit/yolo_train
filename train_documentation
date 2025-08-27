@@ -43,7 +43,7 @@ print("✅ Classes:", class_to_idx)
 ---
 
 ***
-If you want to run, you can run by:
+
 ---
 import subprocess
 
@@ -79,7 +79,6 @@ command = [
 # Run the command
 subprocess.run(command)
 # Get latest output image path
-
 
 ---
 ***
