@@ -45,6 +45,8 @@ print("✅ Classes:", class_to_idx)
 ***
 
 ---
+TRAIN BY:
+
 import subprocess
 
 # Command to run YOLOv5 training
