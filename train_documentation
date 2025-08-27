@@ -118,7 +118,3 @@ yaml.dump({
     "nc": len(classes), "names": classes
 }, open(os.path.join(OUTPUT_DIR, "data.yaml"), "w"))
 
-print("✅ Dataset prepared & data.yaml created!")
-
-✅ Result: You now have a YOLO-ready dataset, complete with train/val splits, bounding boxes auto-extracted by DINO attention maps, and a proper data.yaml.
-
